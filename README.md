@@ -18,6 +18,15 @@ Landing page estática em português, focada em agendamento pelo WhatsApp.
 
 Não foram inventados preços, avaliações, depoimentos, prazos ou condições contratuais. Disponibilidade e condições de locação são confirmadas durante o atendimento.
 
+## Redesign editorial
+
+Direção visual inspirada na referência fornecida https://drahelenafavaro.com.br/: recortes em arco, contornos delicados, composições sobrepostas, formas arredondadas e movimento sutil. Identidade e conteúdo próprios da Maria Fernandes.
+
+Fotos adicionais obtidas do Instagram indicado pelo cliente e armazenadas localmente:
+- `noiva-floral.jpg`: https://www.instagram.com/mariafernandesbride/p/Dc61BynFF-A/
+- `noiva-grinalda.jpg`: https://www.instagram.com/mariafernandesbride/p/DdFNBDJlFA5/
+- `tiara-perolas.jpg`: https://www.instagram.com/mariafernandesbride/p/Dc11hU5lNaD/
+
 ## Execução local
 
 Execute `python3 -m http.server 4173 --directory dist --bind 127.0.0.1` na raiz e abra http://127.0.0.1:4173/.
