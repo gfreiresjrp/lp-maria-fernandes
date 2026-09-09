@@ -1,0 +1,80 @@
+/* Shared alignment and touch-friendly responsive refinements. */
+.header,.hero,.section-wrap,footer{width:100%;max-width:1320px;padding-left:clamp(22px,6vw,80px);padding-right:clamp(22px,6vw,80px)}
+.header .header-label{font-size:inherit;line-height:1.4}
+.header-cta{flex-shrink:0;min-height:44px}
+.hero{grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:clamp(35px,6vw,80px)}
+.hero-art{max-width:465px}.hero-photo{height:auto;aspect-ratio:3/4}.hero-photo figcaption{display:none}
+.hero h1{font-size:clamp(50px,5.3vw,76px);text-wrap:balance}
+.hero h1 em{white-space:normal}
+.hero-description{max-width:430px}
+.collection-grid{align-items:stretch}
+.collection-card,.collection-card:nth-child(2){padding-top:0;display:flex;flex-direction:column;height:100%}
+.card-image{flex:none;aspect-ratio:4/4.5;height:auto}
+.card-image img{position:absolute;inset:0;height:100%}
+.collection-card:nth-child(2) .card-image>span{left:calc(50% - 20px)}
+.card-title{min-height:68px;margin:17px 0 8px;gap:12px}
+.card-title h3{font-size:clamp(26px,2.3vw,32px)}
+.collection-card>p{flex:1}
+.collection-card>.text-link{align-self:flex-start;min-height:44px;margin-top:16px}
+.section-heading>div,.section-heading>p,.experience-inner>div,.space>div,.faq>div,footer>*{min-width:0}
+.hero,.experience-inner,.space,.faq{align-items:center}
+.experience-inner{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.space,.faq{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.faq{align-items:start}.questions{align-content:start}
+.button{min-height:58px}.button>span{flex-shrink:0}
+.location{line-height:1.7}.location>div{min-width:0}
+.instagram{overflow-wrap:anywhere}
+.signature-strip{max-width:1160px;width:calc(100% - 12%)}
+.floating-note{bottom:-2px;left:-20px;max-width:calc(100% + 10px)}
+.closing{padding-bottom:90px}
+@media(min-width:761px) and (max-width:960px){
+  .header nav{display:none}
+  .hero{grid-template-columns:1fr;gap:45px;padding-top:35px;padding-bottom:70px}
+  .hero-copy{max-width:620px;padding-bottom:0}
+  .hero h1{font-size:72px;line-height:1.08}
+  .hero-description{max-width:540px}
+  .hero-art{max-width:440px;justify-self:center;width:85%;margin-top:0}
+  .hero-photo{height:auto;aspect-ratio:3/4}
+  .discover{display:none}
+  .section-heading{align-items:start;gap:30px}.section-heading>p{max-width:300px}
+  .collection-grid{grid-template-columns:1fr;gap:42px}
+  .collection-card{max-width:470px;margin:auto;width:100%}
+  .card-title{min-height:0;margin-top:22px}.card-title h3{font-size:34px}
+  .experience-inner,.space,.faq{grid-template-columns:1fr;gap:42px}
+  .space-images{max-width:440px;margin:auto;width:85%}
+  .space-copy,.experience-intro{max-width:600px}
+  .experience-intro>p:not(.eyebrow){max-width:580px}
+  .space{padding-top:90px;padding-bottom:90px}
+  footer{grid-template-columns:1fr 1fr}footer>p{text-align:right}.instagram{justify-self:start}.footer-bottom{grid-column:1/-1}
+}
+@media(max-width:760px){
+  .hero{grid-template-columns:1fr;gap:32px}.hero h1{font-size:clamp(46px,11.8vw,72px);line-height:1.07;text-wrap:initial}
+  .hero-art{width:88%;max-width:400px;padding-right:8px;padding-bottom:24px;justify-self:center}
+  .hero-photo{height:auto;aspect-ratio:3/4}
+  .hero-copy .button,.space-copy>.button,.experience-intro>.button{width:100%;max-width:410px;justify-content:space-between;text-align:left;font-size:14px}
+  .cta-note{max-width:410px;line-height:1.8}
+  .collection-card{max-width:440px;height:auto}.card-image{max-height:none;aspect-ratio:4/4.5}
+  .card-title{min-height:0;margin:23px 0 14px}.card-title h3{font-size:32px}
+  .collection-card>p{flex:none}.collection-card>.text-link{margin-top:12px}
+  .experience-inner,.space,.faq{grid-template-columns:1fr}
+  .experience-inner{padding-top:60px;padding-bottom:60px}
+  .floating-note{left:-20px;padding:12px;bottom:0;gap:10px}.floating-note small{font-size:8px;letter-spacing:1px}
+  .floating-note p{font-size:20px}.brand-seal{right:-18px}
+  .signature-strip{width:calc(100% - 44px);margin:auto;font-size:16px}
+  .location strong,.location a{font-size:14px}
+  .space-images{width:90%;max-width:400px}
+  .closing{padding-left:27px;padding-right:27px;padding-bottom:65px}
+  .closing h2{font-size:clamp(35px,9.5vw,49px);overflow-wrap:normal}
+  .closing .button{width:100%;max-width:380px;font-size:14px;gap:12px;justify-content:space-between;text-align:left}
+  footer{grid-template-columns:1fr;gap:22px;padding-bottom:96px}
+  .footer-bottom{max-width:100%;font-size:12px}
+}
+@media(max-width:380px){
+  .label-desktop{display:none}.header-cta{min-width:85px;justify-content:center;padding:10px 13px;font-size:13px}.header{gap:10px}
+  .header .brand>span{font-size:16px;letter-spacing:1px}.header .brand small{font-size:7px}
+  .hero-copy .button{font-size:13px;padding:15px 18px}
+  .floating-note p{font-size:18px}.floating-note small{font-size:7px}.floating-note>span{width:30px;height:30px;flex-shrink:0}
+  .floating-note{max-width:calc(100% + 25px)}
+  .section-heading h2,.space-copy h2,.experience h2,.faq h2{font-size:39px}
+  .steps h3{font-size:26px}.steps article{gap:13px}
+}
