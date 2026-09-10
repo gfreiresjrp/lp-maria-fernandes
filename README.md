@@ -8,7 +8,7 @@ Landing page estática em português, focada em agendamento pelo WhatsApp.
 - Imagens reais fornecidas pelo cliente, convertidas de HEIC para JPEG em `dist/assets/`.
 - Destino das chamadas: `https://wa.me/5521985481826`, com mensagens preenchidas por contexto. O visitante confirma o envio no WhatsApp.
 - Nenhum formulário, cookie de marketing ou rastreador instalado. O JavaScript emite o evento local `whatsapp-click`, com `detail.placement`, para eventual integração de métricas.
-- Links e perguntas frequentes funcionam sem JavaScript.
+- Todos os links funcionam sem JavaScript.
 
 ## Fontes consultadas em 9 de setembro de 2026
 
@@ -20,7 +20,7 @@ Não foram inventados preços, avaliações, depoimentos, prazos ou condições 
 
 ## Redesign editorial
 
-Direção visual inspirada na referência fornecida https://drahelenafavaro.com.br/: recortes em arco, contornos delicados, composições sobrepostas, formas arredondadas e movimento sutil. Identidade e conteúdo próprios da Maria Fernandes.
+Direção visual inspirada na referência fornecida https://drahelenafavaro.com.br/, simplificada a pedido do cliente: três seções, títulos compactos, fotografias ovais e em arco, botões arredondados e nenhuma caixa decorativa. Identidade e conteúdo próprios da Maria Fernandes. Foram removidos textos repetitivos, etapas, FAQ e encerramento duplicado.
 
 Fotos adicionais obtidas do Instagram indicado pelo cliente e armazenadas localmente:
 - `noiva-floral.jpg`: https://www.instagram.com/mariafernandesbride/p/Dc61BynFF-A/
@@ -29,9 +29,7 @@ Fotos adicionais obtidas do Instagram indicado pelo cliente e armazenadas localm
 
 ## Execução local
 
-Responsividade conferida em 320, 375, 390, 430, 768, 960, 1024, 1440 e 1920 px, sem overflow horizontal. Cards e CTAs alinhados em desktop, FAQ expansível validado, nove destinos de WhatsApp conferidos e imagens carregadas sem erro. Ajustes finais em `dist/responsive.css`.
-
-Revisão adicional mobile: tipografia mais legível, controles com área mínima de toque de 44 px, fotografias proporcionais, `viewport-fit=cover` e espaçamento com `safe-area-inset-*`. Verificados smartphones entre 320 e 480 px, larguras intermediárias de 600 e 760 px e orientação paisagem. Não há bloqueio de zoom no viewport.
+Estilos consolidados em `dist/styles.css`, com layouts fluidos e pontos de adaptação em 760, 540 e 360 px. No celular, apresentação e atendimento ficam em uma coluna; o acervo mantém três fotos compactas. Controles de contato com área mínima de toque de 44 px, `viewport-fit=cover`, margens de segurança e zoom permitido. As verificações de navegador das versões anteriores não se aplicam a este novo layout; nesta revisão foram conferidos os arquivos estáticos, referências locais, âncoras, destinos de contato e sintaxe JavaScript.
 
 Execute `python3 -m http.server 4173 --directory dist --bind 127.0.0.1` na raiz e abra http://127.0.0.1:4173/.
 
