@@ -31,6 +31,8 @@ Fotos adicionais obtidas do Instagram indicado pelo cliente e armazenadas localm
 
 Responsividade conferida em 320, 375, 390, 430, 768, 960, 1024, 1440 e 1920 px, sem overflow horizontal. Cards e CTAs alinhados em desktop, FAQ expansível validado, nove destinos de WhatsApp conferidos e imagens carregadas sem erro. Ajustes finais em `dist/responsive.css`.
 
+Revisão adicional mobile: tipografia mais legível, controles com área mínima de toque de 44 px, fotografias proporcionais, `viewport-fit=cover` e espaçamento com `safe-area-inset-*`. Verificados smartphones entre 320 e 480 px, larguras intermediárias de 600 e 760 px e orientação paisagem. Não há bloqueio de zoom no viewport.
+
 Execute `python3 -m http.server 4173 --directory dist --bind 127.0.0.1` na raiz e abra http://127.0.0.1:4173/.
 
 ## Publicação
