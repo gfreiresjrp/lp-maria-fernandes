@@ -29,7 +29,7 @@ Fotos adicionais obtidas do Instagram indicado pelo cliente e armazenadas localm
 
 ## Execução local
 
-Estilos consolidados em `dist/styles.css`, com layouts fluidos e pontos de adaptação em 960, 700 e 380 px. No celular, apresentação e atendimento ficam em uma coluna; o acervo usa duas colunas e uma terceira foto centralizada. Controles de contato com área mínima de toque de 44 px, `viewport-fit=cover`, margens de segurança e zoom permitido. As verificações de navegador das versões anteriores não se aplicam a este novo layout; nesta revisão foram conferidos os arquivos estáticos, referências locais, âncoras, destinos de contato e sintaxe JavaScript.
+Estilos consolidados em `dist/styles.css`, com layouts fluidos e pontos de adaptação em 960, 700 e 380 px. No celular, apresentação e atendimento ficam em uma coluna; o acervo usa três linhas iguais, com foto à esquerda e título/legenda à direita. A seção azul exibe foto e texto em blocos separados, sem sobreposição; as imagens do espaço ficam lado a lado, com legenda abaixo em fluxo normal. Foram removidos a foto decorativa sobreposta e o texto vertical da abertura somente no mobile. CTAs principais com largura uniforme e altura mínima de 50 px; `viewport-fit=cover`, margens de segurança e zoom permitido. As verificações de navegador das versões anteriores não se aplicam a este novo layout; nesta revisão foram conferidos os arquivos estáticos, referências locais, âncoras, destinos de contato e sintaxe JavaScript.
 
 Execute `python3 -m http.server 4173 --directory dist --bind 127.0.0.1` na raiz e abra http://127.0.0.1:4173/.
 
